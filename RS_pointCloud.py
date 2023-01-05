@@ -19,9 +19,8 @@ def find_device_that_supports_advanced_mode() :
             return dev
     raise Exception("No D400 product line device that supports advanced mode was found")
 
-advnc_mode = rs.rs400_advanced_mode(find_device_that_supports_advanced_mode())
+"""advnc_mode = rs.rs400_advanced_mode(find_device_that_supports_advanced_mode())"""
 
-print("Advanced mode is", "enabled" if advnc_mode.is_enabled() else "disabled")
 
 # Get each control's current value
 #print("Depth Control: \n", advnc_mode.get_depth_control())
@@ -49,7 +48,7 @@ align = rs.align(rs.stream.color)
 
 
 
-# modifier preset
+"""# modifier preset
 depth_sensor = pipe_profile.get_device().first_depth_sensor()
 preset_range = depth_sensor.get_option_range(rs.option.visual_preset)
 #print('preset range:'+str(preset_range))_
@@ -61,7 +60,7 @@ for i in range(int(preset_range.max)):
 
 pointcloud = op.geometry.PointCloud()
 geometrie_added = False
-##########################################################
+##########################################################"""
 
 
 
